@@ -5,6 +5,8 @@ sudo yum install httpd -y;
 
 sudo systemctl enable httpd;
 
+sudo yum install wget -y;
+
 sudo wget -O /var/www/html/index.html https://raw.githubusercontent.com/bashcarpenter/chris/main/index.html;
 
 sudo systemctl start httpd;
