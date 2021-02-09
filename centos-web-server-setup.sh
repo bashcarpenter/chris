@@ -5,7 +5,7 @@ yum install httpd -y;
 
 systemctl enable httpd -y;
 
-wget -O /var/www/html/index.html https://raw.githubusercontent.com/bashcarpenter/chris/main/index.html
+wget -O /var/www/html/index.html https://raw.githubusercontent.com/bashcarpenter/chris/main/index.html;
 
 systemctl start httpd -y;
 
