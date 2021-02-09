@@ -11,4 +11,9 @@ sudo wget -O /var/www/html/index.html https://raw.githubusercontent.com/bashcarp
 
 sudo systemctl start httpd;
 
+sudo firewall-cmd --zone=public --add-service=https;
+
+sudo firewall-cmd --zone=public --permanent --add-service=https;
+
+
 
