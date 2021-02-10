@@ -1,12 +1,19 @@
-apiVersion: v1
-kind: Pod
+apiversion: v1
+kind: pod
 metadata:
-   name: nginx
+ name: multi
 spec:
-   containers:
-   - name: nginx
-     image: nginx
-     ports:
-     - name: web
-       containerPort: 80
-   
+ volumes:
+ - name: shared-data
+   emptyDir: {}
+ containers:
+ - name: web-container
+   image: nginx
+   volumeMounts:
+   - name: shared-data
+     mountPath: /usr/share/nginx/html
+ - name: ftp-container
+   image: fauria/vsftpd
+   volumeMounts:
+   - name: shared-data
+     mountpath: /pod-data
