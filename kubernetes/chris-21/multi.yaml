@@ -16,4 +16,4 @@ spec:
    image: fauria/vsftpd
    volumeMounts:
    - name: shared-data
-     mountpath: /pod-data
+     mountPath: /pod-data
