@@ -16,6 +16,6 @@ spec:
     spec:
       containers: 
       - name: myapp
-        image: gcr.io/tim-acloud-guru/myapp:blue
+        image: nginx:latest
         ports:
         - containerPort: 8888
