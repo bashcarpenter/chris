@@ -21,4 +21,4 @@ spec:
    - name: FTP_USER
      value: admin
    - name: FTP_PASSWORD
-     value: kefufj8e
+     value: password_here
