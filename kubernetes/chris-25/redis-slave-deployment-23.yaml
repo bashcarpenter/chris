@@ -10,8 +10,8 @@ spec:
       app: redis
       role: slave
       tier: backend
-   replicas: 2
-   template:
+  replicas: 2
+  template:
      metadata:
        labels:
          app: redis
