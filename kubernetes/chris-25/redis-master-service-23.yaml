@@ -13,3 +13,4 @@ metadata:
     selector:
       app: redis
       role: master
+      tier: backend
