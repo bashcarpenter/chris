@@ -6,7 +6,7 @@ metadata:
     app: redis
     role: master
     tier: backend
-  spec:
+spec:
     ports:
     - port: 6379
       targetPort: 6379
