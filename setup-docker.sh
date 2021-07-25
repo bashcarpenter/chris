@@ -27,3 +27,6 @@ docker service update c5zm156f159g --replicas 3
 
 #docker create service with volume 
 docker service create --name nginx --mount type=bind,source=/home/docker/www,target=/usr/share/nginx/html -p 80:80 nginx
+
+# reference
+# https://boxboat.com/2017/08/03/deploy-web-app-docker-swarm-sticky-sessions/
