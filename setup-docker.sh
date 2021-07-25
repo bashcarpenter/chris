@@ -17,7 +17,7 @@ docker swarm join --token SWMTKN-1-k378r347yu7fyr3d7dud78dud78 10.124.0.2:2377
 
 
 #docker create service
-docker service  create nginx
+docker service create nginx
 
 #docker publish service
 docker service update c5zm156f159g --publish-add 80:80
