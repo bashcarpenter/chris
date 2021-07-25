@@ -22,5 +22,8 @@ docker service create nginx
 #docker publish service
 docker service update c5zm156f159g --publish-add 80:80
 
-#docker update replica
+#docker update service with replica
 docker service update c5zm156f159g --replicas 3
+
+#docker create service with volume 
+docker service create --name nginx --mount type=bind,source=/home/docker/www,target=/usr/share/nginx/html -p 80:80 nginx
