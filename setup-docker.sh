@@ -22,3 +22,5 @@ docker service  create nginx
 #docker publish service
 docker service update c5zm156f159g --publish-add 80:80
 
+#docker update replica
+docker service update c5zm156f159g --replicas 3
